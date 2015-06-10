@@ -1,0 +1,34 @@
+#!/sbin/openrc-run
+
+depend() {
+	use logger dns
+	need net
+	after firewall
+}
+
+SYNCTHING_PIDFILE=${SYNCTHING_PIDFILE:-/var/run/${SVCNAME}.pid}
+SYNCTHING_BINARY=${SYNCTHING_BINARY:-/usr/local/bin/syncthing}
+SYNCTHING_CONFIG_FOLDER="/root/.config/syncthing"
+SYNCTHING_OPTS=${SYNCTHING_OPTS:--home=${SYNCTHING_CONFIG_FOLDER}}
+
+start() {
+	ebegin "Starting ${SVCNAME}"
+	
+	if [ ! -d ${SYNCTHING_CONFIG_FOLDER} ]; then
+		echo "First run, creating config ..."
+		${SYNCTHING_BINARY} -generate=${SYNCTHING_CONFIG_FOLDER}
+		sed -i 's/127.0.0.1:8384/0.0.0.0:8384/g' ${SYNCTHING_CONFIG_FOLDER}/config.xml
+	fi
+
+	start-stop-daemon --start --exec "${SYNCTHING_BINARY}" \
+	    --pidfile "${SYNCTHING_PIDFILE}" \
+	    -- ${SYNCTHING_OPTS}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping ${SVCNAME}"
+	start-stop-daemon --stop --exec "${SYNCTHING_BINARY}" \
+	    --pidfile "${SYNCTHING_PIDFILE}" --quiet
+	eend $?
+}
