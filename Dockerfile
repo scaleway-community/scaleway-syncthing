@@ -1,5 +1,5 @@
 ## -*- docker-image-name: "armbuild/scw-app-syncthing:latest" -*-
-FROM armbuild/scw-distrib-alpine:latest
+FROM armbuild/scw-distrib-alpine:3.2.0
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 # Prepare rootfs for image-builder
