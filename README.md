@@ -33,13 +33,6 @@ Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway
 Full list of commands available at: [scaleway/image-tools](https://github.com/scaleway/image-tools/#commands)
 
 
-## Test
-
-On a running instance:
-
-    $ SCRIPT=$(mktemp); curl -s https://raw.githubusercontent.com/scaleway/image-app-syncthing/master/test.bash > $SCRIPT; bash $SCRIPT
-
-
 ---
 
 A project by [![Scaleway](https://avatars1.githubusercontent.com/u/5185491?v=3&s=42)](https://www.scaleway.com/)
