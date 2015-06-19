@@ -1,7 +1,7 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			scw-app-syncthing
 VERSION =		latest
-VERSION_ALIASES =	v0.11.8
+VERSION_ALIASES =	v0.11.9
 TITLE =			Syncthing
 DESCRIPTION =		Syncthing node
 SOURCE_URL =		https://github.com/scaleway/image-app-syncthing
