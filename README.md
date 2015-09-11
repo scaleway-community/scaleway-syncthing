@@ -1,6 +1,6 @@
 # Syncthing image on Scaleway
 
-[![Travis](https://img.shields.io/travis/scaleway/image-app-syncthing.svg)](https://travis-ci.org/scaleway/image-app-syncthing)
+[![Travis](https://img.shields.io/travis/scaleway-community/scaleway-syncthing.svg)](https://travis-ci.org/scaleway-community/scaleway-syncthing)
 [![Scaleway ImageHub](https://img.shields.io/badge/ImageHub-view-ff69b4.svg)](https://hub.scaleway.com/syncthing.html)
 [![Run on Scaleway](https://img.shields.io/badge/Scaleway-run-69b4ff.svg)](https://cloud.scaleway.com/#/servers/new?image=5a58a837-c2f8-4d68-838f-28726f7b2836)
 
