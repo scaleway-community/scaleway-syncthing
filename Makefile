@@ -1,5 +1,4 @@
-DOCKER_NAMESPACE =	armbuild/
-NAME =			scw-app-syncthing
+NAME =			syncthing
 VERSION =		latest
 VERSION_ALIASES =	0.11.9 0.11 0
 TITLE =			Syncthing
