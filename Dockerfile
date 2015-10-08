@@ -5,7 +5,7 @@ MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
 
-ENV VERSION v0.11.9
+ENV VERSION v0.11.26
 
 RUN wget -q --no-check-certificate "https://github.com/syncthing/syncthing/releases/download/${VERSION}/syncthing-linux-arm-${VERSION}.tar.gz" -O syncthing.tar.gz && \
     tar -xzf syncthing.tar.gz && \
