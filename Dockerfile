@@ -1,5 +1,5 @@
 ## -*- docker-image-name: "scaleway/syncthing:latest" -*-
-FROM scaleway/alpine:3.2.0
+FROM scaleway/alpine:3.2.3
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 # Prepare rootfs for image-builder
