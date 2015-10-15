@@ -1,6 +1,6 @@
 NAME =			syncthing
 VERSION =		latest
-VERSION_ALIASES =	0.11.9 0.11 0
+VERSION_ALIASES =	0.11.26 0.11 0
 TITLE =			Syncthing
 DESCRIPTION =		Syncthing node
 SOURCE_URL =		https://github.com/scaleway-community/scaleway-syncthing
