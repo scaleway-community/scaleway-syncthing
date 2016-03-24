@@ -5,7 +5,7 @@ TITLE =			Syncthing
 DESCRIPTION =		Syncthing node
 SOURCE_URL =		https://github.com/scaleway-community/scaleway-syncthing
 
-IMAGE_VOLUME_SIZE =	150G
+IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	stable
 IMAGE_NAME =		Syncthing
 
